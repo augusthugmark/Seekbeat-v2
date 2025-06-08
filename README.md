@@ -20,5 +20,7 @@ This is version 2 of the Seekbeat project, refactored from vanilla JavaScript to
 ## Installation
 
 bash:
-npm install
-npm start
+
+- npm install
+- npm start
+
