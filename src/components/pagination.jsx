@@ -1,23 +1,18 @@
 import React from 'react';
+import { Pagination } from 'react-bootstrap';
 
-const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+const PaginationControls = ({ currentPage, totalPages, onPageChange }) => {
   return (
-    <div className="pagination">
-      <button onClick={() => onPageChange(1)} disabled={currentPage === 1}>
-        First
-      </button>
-      <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
-        Prev
-      </button>
-      <span>Page {currentPage} of {totalPages}</span>
-      <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
-        Next
-      </button>
-      <button onClick={() => onPageChange(totalPages)} disabled={currentPage === totalPages}>
-        Last
-      </button>
+    <div className="d-flex justify-content-center my-4">
+      <Pagination>
+        <Pagination.First onClick={() => onPageChange(1)} disabled={currentPage === 1} />
+        <Pagination.Prev onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1} />
+        <Pagination.Item active>{currentPage}</Pagination.Item>
+        <Pagination.Next onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages} />
+        <Pagination.Last onClick={() => onPageChange(totalPages)} disabled={currentPage === totalPages} />
+      </Pagination>
     </div>
   );
 };
 
-export default Pagination;
+export default PaginationControls;

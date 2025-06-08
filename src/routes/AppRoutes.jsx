@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import MusicPage from './pages/musicPage';
+import MusicPage from '../pages/MusicPage';
 
 const AppRoutes = () => {
   return (
