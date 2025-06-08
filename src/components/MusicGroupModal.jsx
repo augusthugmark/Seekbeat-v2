@@ -73,9 +73,6 @@ const MusicGroupModal = ({ groupId, show, onClose }) => {
           </>
         )}
       </Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={onClose}>Close</Button>
-      </Modal.Footer>
     </Modal>
   );
 };
