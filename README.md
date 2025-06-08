@@ -34,3 +34,4 @@ bash:
 
 ### Modal with Group Details
 ![Modal details](public/ScreenshotDetailsModal.png)
+
