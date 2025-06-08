@@ -24,3 +24,13 @@ bash:
 - npm install
 - npm start
 
+## 📸 Screenshots
+
+### Home Page
+![Home](public/ScreenshotHomePage.png)
+
+### Music Page
+![Music Page](public/ScreenshotMusicPage.png)
+
+### Modal with Group Details
+![Modal details](public/ScreenshotDetailsModal.png)
