@@ -1,7 +1,7 @@
 # Seekbeat v2 – Music Discovery App (React)
 
 A responsive music discovery webapp built with **React**, **CSS**, and a **RESTful Web API**.  
-This is version 2 of the Seekbeat project, refactored from vanilla JavaScript to React as part of the “Inlämning B” assignment.
+This is version 2 of the Seekbeat project, refactored from vanilla JavaScript to React as part of a school assignment.
 
 ## Features
 
@@ -14,7 +14,7 @@ This is version 2 of the Seekbeat project, refactored from vanilla JavaScript to
   - Year established
   - Artists
   - Albums
-- Custom statistics section (VG requirement)
+- Custom statistics section
 - Styled using CSS and Bootstrap utilities
 
 ## Installation
