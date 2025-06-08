@@ -62,7 +62,13 @@ const MusicPage = () => {
 
       {query && (
         <p className="mt-2">
-          {totalResults} result{totalResults !== 1 && 's'} found for "<strong>{query}</strong>"
+          Showing{' '}
+          <strong>
+            {(currentPage - 1) * resultsPerPage + 1}
+            –
+            {Math.min(currentPage * resultsPerPage, totalResults)}
+          </strong>{' '}
+          of <strong>{totalResults}</strong> result{totalResults !== 1 && 's'} for "<strong>{query}</strong>"
         </p>
       )}
 
