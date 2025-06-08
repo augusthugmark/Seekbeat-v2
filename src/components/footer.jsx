@@ -1,11 +1,7 @@
-import React from 'react';
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="app-footer">
-      <p>&copy; 2025 Seekbeat made by August Hugmark </p>
+    <footer className="site-footer">
+      <p>© 2025 Seekbeat | Built by August Hugmark </p>
     </footer>
   );
-};
-
-export default Footer;
+}

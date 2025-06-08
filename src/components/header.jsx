@@ -1,16 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import NavMenu from './NavMenu';
+import Sidebar from './Sidebar';
 
-const Header = () => {
+export default function Header() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <header className="app-header">
-      <h1>Seekbeat</h1>
-      <nav>
-        <Link to="/">Music</Link>
-        {/* fler länkar senare */}
-      </nav>
+    <header className="site-header">
+      {/* Visa NavMenu på desktop */}
+      <div className="desktop-nav">
+        <NavMenu />
+      </div>
+
+      {/* Visa hamburgare på mobil */}
+      <button className="hamburger" onClick={() => setIsSidebarOpen(true)}>
+        ☰
+      </button>
+
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
     </header>
   );
-};
-
-export default Header;
+}
