@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import musicService from '../services/musicService';
-import MusicGroupList from '../components/MusicGroupList';
-import SearchBar from '../components/SearchBar';
-import Pagination from '../components/Pagination';
-import ApiStats from '../components/ApiStats';
+import MusicGroupList from '../components/musicGroupList';
+import SearchBar from '../components/searchBar';
+import Pagination from '../components/pagination';
+import ApiStats from '../components/apiStats';
 
 const MusicPage = () => {
   const [groups, setGroups] = useState([]);
