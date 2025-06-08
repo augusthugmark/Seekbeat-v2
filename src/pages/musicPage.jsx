@@ -18,7 +18,6 @@ const MusicPage = () => {
 
   const resultsPerPage = 10;
 
-  // Ladda API-statistik
   useEffect(() => {
     const fetchStats = async () => {
       const data = await musicService.readInfoAsync();
@@ -27,7 +26,6 @@ const MusicPage = () => {
     fetchStats();
   }, []);
 
-  // Hämta musikgrupper när sidan eller sökning ändras
   useEffect(() => {
     const fetchGroups = async () => {
       try {
@@ -48,7 +46,6 @@ const MusicPage = () => {
     fetchGroups();
   }, [currentPage, query]);
 
-  // Hantera ny sökning
   const handleSearch = (searchTerm) => {
     setQuery(searchTerm || null);
     setCurrentPage(1);
@@ -57,7 +54,6 @@ const MusicPage = () => {
   return (
     <Container className="my-4">
       {stats && <ApiStats stats={stats} />}
-
       <SearchBar onSearch={handleSearch} />
 
       {query && (
