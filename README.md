@@ -32,6 +32,6 @@ bash:
 ### Music Page
 ![Music Page](public/ScreenshotMusicPage.png)
 
-### Modal with Group Details
-![Details Modal](./ScreenshotDetailsModal.png)
+### Modal with Details
+![Details Modal](public/ScreenshotDetailsModal.png)
 
